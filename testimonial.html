@@ -27,32 +27,40 @@
 </head>
 
 <body>
+    <!-- Header aviso maqueta -->
+    <header>
+    <div class="marquee-container">
+    <p class="marquee-text">
+      🌟 Bienvenido a la futura web de VidToursCR — ESTA ES UNA PÁGINA DE PRUEBA — ¡Gracias por visitarnos! 🌟
+    </p>
+    </div>
+    </header>
     <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>info@vidtourscr.com</p>
+                        <p>
+						<i class="fa fa-envelope mr-2"></i><a href="mailto:info@vidtourscr.com">info@vidtourscr.com</a>
+						</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+34 926 123 456</p><!-- Cambio tel+mail 30/10 13:04 -->
+                        <p><i class="fa fa-phone-alt mr-2"></i>+34 926 123 456</p><!-- Cambio tel+mail 30/10 13:00 -->
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.facebook.com/login/?locale=es_ES" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
+                        <!-- Eliminado enlace a twitter 01/11 23:15 -->
+                        <a class="text-primary px-3" href="https://www.linkedin.com/login/es" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.instagram.com/accounts/login/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-primary pl-3" href="">
+                        <a class="text-primary pl-3" href="https://www.youtube.com/" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -62,33 +70,38 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">VidTours</span>CR</h1> <!-- Brand modificada el 30/10 10:50 -->
+                    <h1 class="m-0 text-primary"><span class="text-dark">VidTours</span>CR</h1> <!-- Brand modificada el 30/10 10:10 -->
+                </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                            <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                                <a href="service.html" class="dropdown-item">Generales</a>
+                                <a href="package.html" class="dropdown-item">Paquetes</a>
+                                <a href="sumate.html" class="dropdown-item">Súmate</a>
                             </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Descubre</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <!-- Blogs elimina2 el 30/10 13:15 -->
+                                <a href="destination.html" class="dropdown-item">Destinos</a>
+                                <a href="guide.html" class="dropdown-item">Guías</a>
+                                <a href="testimonial.html" class="dropdown-item">Reseñas</a>
+                            </div>
+                    </div>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -96,77 +109,75 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Header Start -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Testimonial</h3>
+                <h3 class="display-4 text-white text-uppercase">Testimonios</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
+					<i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Descubre</p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Testimonial</p>
+                    <p class="m-0 text-uppercase">Reseñas</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
 
-
     <!-- Booking Start -->
     <!-- eliminado el 30/10 10:06 -->
     <!-- Booking End -->
-
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
-                <h1>What Say Our Clients</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h6>
+                <h1>No son "solo" reseñas...son experiencias!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
                     <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        <p class="mt-5">"Fuimos mi pareja y yo a una de las rutas de bodegas en La Mancha y nos encantó. La comodidad de que te lleven y poder disfrutar de los vinos, lo mejor."
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Angel</h5>
+                        <span>Desarrollador web</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        <p class="mt-5">"Fantástica ruta por los pueblos calatravos, alojamiento estupendo y catas en bodegas pintorescas. 100% recomendable."
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Ana García</h5>
+                        <span>Influencer</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        <p class="mt-5">"Descubrimos en familia muchos tesoros del patrimonio cultural y enológico de La Mancha. El transporte y el alojamiento de 10. Repetiremos."
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Familia Núñez</h5>
+                        <span>Viajeros</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        <p class="mt-5">"A weekend getaway visiting some really cool wineries, pretty villages, and unexpected natural landscapes. The wines were fantastic!"
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Michael Kors</h5>
+                        <span>Journalist</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
@@ -187,7 +198,7 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Menú web</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Volver arriba</a>
+                    <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
                     <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Sobre nosotros</a>
                     <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
                     <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Paquetes</a>
@@ -230,7 +241,7 @@
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="index.html">Angel A. Isado Lenis</a> <!-- Sustituido enlace a https://htmlcodex.com por index el 01/11 23:10 -->
+                <p class="m-0 text-white-50">Designed by <a href="contact.html">Angel A. Isado Lenis</a> <!-- Sustituido enlace a https://htmlcodex.com por index el 01/11 23:10, Sustituido por contact el 08/11 21:44 -->
                 </p>
             </div>
         </div>
