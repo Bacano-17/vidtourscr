@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bacano-17.github.io/vidtourscr/sitemap.xml
