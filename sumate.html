@@ -35,7 +35,6 @@
     gtag('config', 'G-Q28VH4HW64');
     </script>
 </head>
-
 <body>
     <!-- Header aviso maqueta -->
     <header>
@@ -45,6 +44,7 @@
     </p>
     </div>
     </header>
+    <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
@@ -59,25 +59,25 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="https://www.facebook.com/login/?locale=es_ES" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
+                        <a class="text-primary px-3" href="https://www.facebook.com/login/?locale=es_ES" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
                         </a>
                         <!-- Eliminado enlace a twitter 01/11 23:15 -->
-                        <a class="text-primary px-3" href="https://www.linkedin.com/login/es" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
+                        <a class="text-primary px-3" href="https://www.linkedin.com/login/es" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                         </a>
-                        <a class="text-primary px-3" href="https://www.instagram.com/accounts/login/" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                        <a class="text-primary px-3" href="https://www.instagram.com/accounts/login/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a class="text-primary pl-3" href="https://www.youtube.com/" target="_blank">
-                            <i class="fab fa-youtube"></i>
+                        <a class="text-primary pl-3" href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- Topbar End -->
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
@@ -116,7 +116,7 @@
         </div>
     </div>
     <!-- Navbar End -->
-
+	<main>
     <!-- Header Start -->
     <div class="container-fluid page-header">
         <div class="container">
@@ -133,11 +133,6 @@
         </div>
     </div>
     <!-- Header End -->
-
-    <!-- Booking Start -->
-    <!-- eliminado el 30/10 9:55 -->
-    <!-- Booking End -->
-
     <!-- Súmate Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
@@ -204,20 +199,21 @@
         </div>
     </div>
     <!-- Destination End -->
+	</main>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">VidTours</span>CR</h1> <!-- Brand modificada el 30/10 11:30 -->
+                    <h2 class="text-primary"><span class="text-white">VidTours</span>CR</h2> <!-- Brand modificada el 30/10 11:30 -->
                 </a>
                 <p>Te ofrecemos todo un mundo por descubir, en el mayor viñedo del mundo, rodeado de cultura, monumentos, patrimonio natural...y por supuesto grandes vinos!</p><!-- Párrafo modificado el 30/10 12:30 -->
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síguenos</h6>
                 <div class="d-flex justify-content-start">
                     <!-- Eliminado twitter el 01/11 22:30 -->
-                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/login/?locale=es_ES" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/login/es" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/login/?locale=es_ES" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/accounts/login/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/login/es" target="_blank" aria-label="Linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -253,9 +249,10 @@
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email">
+                    <label for="email-news" class="sr-only">Correo electrónico</label>
+                    <input id="email-news" type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Apúntate</button>
+                        <button class="btn btn-primary px-3">Apúntate</button>
                         </div>
                     </div>
                 </div>
@@ -275,7 +272,6 @@
         </div>
     </div>
     <!-- Footer End --> 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
@@ -295,8 +291,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
-
 </html>
+
 
 
